@@ -26,15 +26,15 @@ body>* {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 3.75rem;
+  font-size: 3.25rem;
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 input,
@@ -45,9 +45,29 @@ button {
 img {
   display: block;
   margin: 0 auto;
-  width: 20%;
+  width: 40%;
 }
 
+.carousel {
+  margin-top: 8%;
+  visibility: hidden;
+}
+
+.carousel-cell {
+  width: 50%;
+  height: 600px;
+  margin-right: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center center;
+  background: darkgray;
+}
+
+.carousel-cell:before {
+  display: block;
+  content: '';
+}
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -58,18 +78,23 @@ img {
   }
 
   h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
     font-size: 2.75rem;
   }
 
-  h3 {
+  h2 {
     font-size: 2.5rem;
   }
 
+  h3 {
+    font-size: 2.25rem;
+  }
+
   img {
-    width: 80%;
+    width: 50%;
+  }
+
+  .carousel-cell {
+    width: 90%;
+    height: 500px;
   }
 }

@@ -8,24 +8,26 @@
 
 	<title>Cocktails</title>
 
+	<!-- external CSS link -->
 	<link rel="icon" href="data:,"> <!-- stops 'missing favicon' error in console -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
 
-	<h1>Which Cocktail?</h1>
+	<h1>What Type Of Cocktail Would You Like?</h1>
 
 	<form onsubmit="return false">
 		<input type="text" name="" value="">
-		<button type="button" name="button">Get Cocktail</button>
+		<button type="button" name="button">Get Cocktails</button>
 	</form>
 
-	<h2></h2>
-	<img src="" alt="">
-	<h3></h3>
+	<section class="carousel" data-flickity='{"autoPlay": 4000}'>
+	</section>
 
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 
